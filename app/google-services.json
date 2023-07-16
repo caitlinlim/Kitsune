@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "628197029108",
+    "firebase_url": "https://kitsune-19cd0-default-rtdb.firebaseio.com",
+    "project_id": "kitsune-19cd0",
+    "storage_bucket": "kitsune-19cd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628197029108:android:6e84dff9a78c04dd8f5aa1",
+        "android_client_info": {
+          "package_name": "com.example.kitsune"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628197029108-q9q5ait9c8pq3adci81d7rj9og3d5647.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfA91wQJFnWU1iVhU3aATGbzwWVpYHx6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628197029108-q9q5ait9c8pq3adci81d7rj9og3d5647.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
