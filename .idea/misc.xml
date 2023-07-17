@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/circle_background.xml" value="0.252" />
+        <entry key="app/src/main/res/drawable/ic_comment.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/ic_like.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/ic_magnifying_glass.xml" value="0.252" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.252" />
+        <entry key="app/src/main/res/drawable/profile_background_image.xml" value="0.252" />
+        <entry key="app/src/main/res/drawable/rounded_corners_background.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/search_bar_background.xml" value="0.252" />
+        <entry key="app/src/main/res/drawable/section_background.xml" value="0.252" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.20222317229585293" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.20222317229585293" />
+        <entry key="app/src/main/res/layout/item_trainer.xml" value="0.20222317229585293" />
+        <entry key="app/src/main/res/layout/sn_explore.xml" value="0.27605438232421875" />
+        <entry key="app/src/main/res/layout/sn_feed.xml" value="0.32624918619791665" />
+        <entry key="app/src/main/res/layout/sn_item_post.xml" value="0.2652999545224155" />
+        <entry key="app/src/main/res/layout/sn_profile.xml" value="0.25178375244140627" />
+        <entry key="app/src/main/res/layout/sn_rec_item_post.xml" value="0.20222317229585293" />
+        <entry key="app/src/main/res/layout/styles.xml" value="0.20222317229585293" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20222317229585293" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

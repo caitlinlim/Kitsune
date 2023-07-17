@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_colour">#E19178</color>       <!-- Orange colour for headings -->
+    <color name="secondary_colour">#EAE2E2</color>     <!-- Grey colour for backgrounds -->
+    <color name="sub_secondary_colour">#A8A2A2</color>     <!-- Dark grey colour for subheadings -->
+    <color name="tertiary_colour">#BA4822</color>       <!-- Darker orange colour for subheadings -->
+    <color name="background_colour">#FFFFFF</color>    <!-- White colour for background -->
+    <color name="background_image_colour">#FFFFFF</color>    <!-- Feed colour for background -->
+
+    <color name="toolbar_title_colour">#FFFFFF</color>    <!-- Feed -->
+    <color name="primary_text_colour">#000000</color>    <!-- Feed -->
+    <color name="secondary_text_colour">#000000</color>    <!-- Feed -->
 </resources>

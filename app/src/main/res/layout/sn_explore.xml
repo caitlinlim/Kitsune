@@ -1,0 +1,76 @@
+<!-- activity_explore.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/background_colour"
+    tools:ignore="ExtraText">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_colour"
+        android:elevation="4dp"
+        app:title="Explore"
+        app:titleTextColor="@color/toolbar_title_colour" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="16dp"
+        android:hint="Search"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:background="@drawable/search_bar_background"
+        android:drawableStart="@drawable/ic_magnifying_glass" /> <!-- Set the magnifying glass icon -->
+
+    <!-- Recommended Trainers Section -->
+    <TextView
+        android:id="@+id/recommended_trainers_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginTop="16dp"
+        android:text="Recommended Trainers"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Sample RecyclerView for Recommended Trainers -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recommended_trainers_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommended_trainers_title"
+        android:layout_marginTop="8dp" />
+
+    <!-- Recommended Posts Section -->
+    <TextView
+        android:id="@+id/recommended_posts_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommended_trainers_recycler_view"
+        android:layout_marginTop="16dp"
+        android:text="Recommended Posts"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recommended_posts_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommended_posts_title"
+        android:layout_marginTop="8dp" />
+
+
+
+
+</RelativeLayout>
+
+
