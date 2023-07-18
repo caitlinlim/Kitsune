@@ -35,6 +35,19 @@
         <activity
             android:name=".ExploreActivity"
             android:label="Kitsune"></activity>
+
+        <activity
+            android:name=".ShoppingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

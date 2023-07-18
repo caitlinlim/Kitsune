@@ -1,0 +1,169 @@
+<!-- activity_checkout.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".CartActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cart Item 1 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/cartItem1Image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cart_item1"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/cartItem1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cartItem1Image"
+                    android:text="Cart Item 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/cartItem1Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cartItem1Image"
+                    android:layout_below="@id/cartItem1Name"
+                    android:text="Price: $24.99"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"/>
+
+                <Button
+                    android:id="@+id/cartItem1RemoveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cartItem1Name"
+                    android:layout_alignParentEnd="true"
+                    android:text="Remove"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <!-- Cart Item 2 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/cartItem2Image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cart_item2"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/cartItem2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cartItem2Image"
+                    android:text="Cart Item 2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/cartItem2Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cartItem2Image"
+                    android:layout_below="@id/cartItem2Name"
+                    android:text="Price: $19.99"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"/>
+
+                <Button
+                    android:id="@+id/cartItem2RemoveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cartItem2Name"
+                    android:layout_alignParentEnd="true"
+                    android:text="Remove"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <!-- Cart Item 3 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/cartItem3Image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cart_item3"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/cartItem3Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cartItem3Image"
+                    android:text="Cart Item 3"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/cartItem3Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cartItem3Image"
+                    android:layout_below="@id/cartItem3Name"
+                    android:text="Price: $29.99"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"/>
+
+                <Button
+                    android:id="@+id/cartItem3RemoveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cartItem3Name"
+                    android:layout_alignParentEnd="true"
+                    android:text="Remove"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <!-- Add more items as needed -->
+
+            <!-- Checkout Button -->
+            <Button
+                android:id="@+id/checkoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkout"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
