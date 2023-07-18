@@ -7,23 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class HomePage extends AppCompatActivity {
-    private Button onlineStoreButton;
+public class ShoppingActivity extends AppCompatActivity {
+
+    private Button viewMore1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
+        setContentView(R.layout.shopping_page);
 
-        onlineStoreButton = (Button) findViewById(R.id.onlineStoreButton);
-        onlineStoreButton.setOnClickListener(new View.OnClickListener() {
+        viewMore1 = (Button) findViewById(R.id.viewMore1);
+        viewMore1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openShoppingActivity();
+                openItemActivity();
             }
         });
     }
-    public void openShoppingActivity() {
-        Intent intent = new Intent(HomePage.this, ShoppingActivity.class);
+    public void openItemActivity() {
+        Intent intent = new Intent(ShoppingActivity.this, ItemActivity.class);
         startActivity(intent);
     }
 }

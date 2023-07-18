@@ -1,35 +1,37 @@
 <!-- activity_explore.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="16dp"
     android:background="@color/background_colour"
+    android:padding="16dp"
     tools:ignore="ExtraText">
 
     <!-- Toolbar -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <Button
+        android:id="@+id/exploreButton"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/primary_colour"
+        android:backgroundTint="@color/primary_colour"
         android:elevation="4dp"
+        android:text="   Explore"
+        android:gravity="left|center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:title="Explore"
-        app:titleTextColor="@color/toolbar_title_colour" />
+        app:titleTextColor="@color/background_colour" />
 
     <!-- Search Bar -->
     <EditText
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
         android:layout_marginTop="16dp"
-        android:hint="Search"
+        android:background="#FF9800"
         android:padding="8dp"
-        android:textSize="16sp"
-        android:background="@drawable/search_bar_background"
-        android:drawableStart="@drawable/ic_magnifying_glass" /> <!-- Set the magnifying glass icon -->
+        android:textSize="16sp" /> <!-- Set the magnifying glass icon -->
 
     <!-- Recommended Trainers Section -->
     <TextView
@@ -67,8 +69,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/recommended_posts_title"
         android:layout_marginTop="8dp" />
-
-
 
 
 </RelativeLayout>

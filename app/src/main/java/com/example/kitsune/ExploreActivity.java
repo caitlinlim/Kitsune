@@ -1,9 +1,11 @@
 package com.example.kitsune;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -14,11 +16,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExploreActivity extends AppCompatActivity {
+    private Button exploreButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sn_explore);
+
+        exploreButton = (Button) findViewById(R.id.exploreButton);
+        exploreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHomePage();
+            }
+        });
 
         RecyclerView recommendedTrainersRecyclerView = findViewById(R.id.recommended_trainers_recycler_view);
         recommendedTrainersRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -33,6 +44,11 @@ public class ExploreActivity extends AppCompatActivity {
         List<Post> postList = generateSamplePosts();
         PostAdapter postAdapter = new PostAdapter(postList);
         recommendedPostsRecyclerView.setAdapter(postAdapter);
+    }
+
+    public void openHomePage() {
+        Intent intent = new Intent(ExploreActivity.this, HomePage.class);
+        startActivity(intent);
     }
 
     private List<Trainer> generateSampleTrainers() {
