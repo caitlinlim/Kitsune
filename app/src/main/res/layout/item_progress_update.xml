@@ -1,0 +1,74 @@
+<!-- item_post.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_corners_background">
+
+    <!-- User Info Section -->
+
+    <!-- Image Associated with the Post -->
+    <ImageView
+        android:id="@+id/pu_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/default_post_image" />
+
+    <!-- Post Caption -->
+    <TextView
+        android:id="@+id/pu_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is an example post caption."
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_colour"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Post Like and Comment Count -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/pu_like_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_like"
+            app:tint="@color/tertiary_colour" />
+
+        <TextView
+            android:id="@+id/pu_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="14sp"
+            android:textColor="@color/tertiary_colour"
+            android:layout_marginStart="4dp"/>
+
+        <ImageView
+            android:id="@+id/pu_comment_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_comment"
+            android:layout_marginStart="16dp"
+            app:tint="@color/tertiary_colour" />
+
+        <TextView
+            android:id="@+id/pu_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textSize="14sp"
+            android:textColor="@color/tertiary_colour"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
