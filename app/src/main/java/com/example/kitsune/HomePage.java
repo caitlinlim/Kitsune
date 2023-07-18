@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class HomePage extends AppCompatActivity {
     private Button onlineStoreButton;
+    private Button monitorHealthButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +22,21 @@ public class HomePage extends AppCompatActivity {
                 openShoppingActivity();
             }
         });
+
+        monitorHealthButton = (Button) findViewById(R.id.monitorHealthButton);
+        monitorHealthButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHealthInfo();
+            }
+        });
     }
     public void openShoppingActivity() {
         Intent intent = new Intent(HomePage.this, ShoppingActivity.class);
+        startActivity(intent);
+    }
+    public void openHealthInfo() {
+        Intent intent = new Intent(HomePage.this, HealthInfo.class);
         startActivity(intent);
     }
 }
