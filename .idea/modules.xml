@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kitsune.iml" filepath="$PROJECT_DIR$/.idea/modules/Kitsune.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kitsune.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kitsune.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kitsune.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kitsune.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kitsune.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kitsune.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kitsune.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kitsune.app.unitTest.iml" />
     </modules>
   </component>
 </project>
