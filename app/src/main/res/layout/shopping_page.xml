@@ -17,17 +17,21 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="82dp">
+            android:layout_height="23dp">
 
             <!-- Cart Icon -->
             <ImageView
                 android:id="@+id/cartIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="350dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/cart_icon" />
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/carticon" />
 
         </RelativeLayout>
 
@@ -43,8 +47,10 @@
 
                 <!-- Workout Clothing Items -->
                 <RelativeLayout
+                    android:id="@+id/leggingsButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="true"
                     android:padding="8dp">
 
                     <!-- Item 1 -->
@@ -52,174 +58,177 @@
                         android:id="@+id/item1Image"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/workout_item1"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/leggings" />
 
                     <TextView
                         android:id="@+id/item1Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
                         android:layout_toRightOf="@id/item1Image"
-                        android:text="Workout Item 1"
+                        android:text="Women's Leggings"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="8dp"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/item1Price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/item1Image"
                         android:layout_below="@id/item1Name"
-                        android:text="Price: $24.99"
-                        android:textSize="16sp"
-                        android:layout_marginLeft="8dp"/>
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/item1Image"
+                        android:text="Price: $64.99"
+                        android:textSize="16sp" />
 
-                    <Button
-                        android:id="@+id/viewMore1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="View More" />
 
                 </RelativeLayout>
 
                 <!-- Item 2 -->
                 <RelativeLayout
+                    android:id="@+id/mensTankButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="true"
                     android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/item2Image"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/workout_item2"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/menstank" />
 
                     <TextView
                         android:id="@+id/item2Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
                         android:layout_toRightOf="@id/item2Image"
-                        android:text="Workout Item 2"
+                        android:text="Men's Tank Top"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="8dp"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/item2Price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/item2Image"
                         android:layout_below="@id/item2Name"
-                        android:text="Price: $19.99"
-                        android:textSize="16sp"
-                        android:layout_marginLeft="8dp"/>
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/item2Image"
+                        android:text="Price: $29.99"
+                        android:textSize="16sp" />
 
                 </RelativeLayout>
 
                 <!-- Item 3 -->
                 <RelativeLayout
+                    android:id="@+id/sportsBraButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="true"
                     android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/item3Image"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/workout_item3"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sportsbra" />
 
                     <TextView
                         android:id="@+id/item3Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
                         android:layout_toRightOf="@id/item3Image"
-                        android:text="Workout Item 3"
+                        android:text="Sports Bra"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="8dp"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/item3Price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/item3Image"
                         android:layout_below="@id/item3Name"
-                        android:text="Price: $29.99"
-                        android:textSize="16sp"
-                        android:layout_marginLeft="8dp"/>
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/item3Image"
+                        android:text="Price: $34.99"
+                        android:textSize="16sp" />
 
                 </RelativeLayout>
 
                 <!-- Workout Clothing Item 4 -->
                 <RelativeLayout
+                    android:id="@+id/shortsButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="true"
                     android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/item4Image"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/workout_item3"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mensshorts" />
 
                     <TextView
                         android:id="@+id/item4Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
                         android:layout_toRightOf="@id/item4Image"
-                        android:text="Workout Item 3"
+                        android:text="Men's Shorts"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="8dp"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/item4Price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/item4Image"
                         android:layout_below="@id/item4Name"
-                        android:text="Price: $29.99"
-                        android:textSize="16sp"
-                        android:layout_marginLeft="8dp"/>
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/item4Image"
+                        android:text="Price: $38.99"
+                        android:textSize="16sp" />
 
                 </RelativeLayout>
 
                 <!-- Workout Clothing Item 5 -->
                 <RelativeLayout
+                    android:id="@+id/womensTankButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="true"
                     android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/item5Image"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/workout_item3"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/womenstank" />
 
                     <TextView
                         android:id="@+id/item5Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
                         android:layout_toRightOf="@id/item5Image"
-                        android:text="Workout Item 3"
+                        android:text="Women's Tank Top"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="8dp"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/item5Price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/item5Image"
                         android:layout_below="@id/item5Name"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/item5Image"
                         android:text="Price: $29.99"
-                        android:textSize="16sp"
-                        android:layout_marginLeft="8dp"/>
+                        android:textSize="16sp" />
 
                 </RelativeLayout>
 
