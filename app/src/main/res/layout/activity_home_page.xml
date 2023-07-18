@@ -4,6 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage">
+    tools:context=".HomePage"
+    android:background="@drawable/homepage_bg">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Kitsune!"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Info"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="145dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

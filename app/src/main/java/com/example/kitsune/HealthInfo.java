@@ -3,6 +3,7 @@ package com.example.kitsune;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,7 +27,7 @@ public class HealthInfo extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
-    Button submit;
+    Button submit, homebtn;
 
     EditText bmiText, heightText, weightText;
 
@@ -44,6 +45,8 @@ public class HealthInfo extends AppCompatActivity {
         weightText = findViewById(R.id.weightText);
         heightText = findViewById(R.id.heightText);
         bmiText = findViewById(R.id.bmiText);
+
+        homebtn = findViewById(R.id.homebtn);
 
 
 
@@ -90,6 +93,15 @@ public class HealthInfo extends AppCompatActivity {
                                 Log.w("com.example.kitsune", "Error adding document", e);
                             }
                         });
+            }
+        });
+
+        homebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HealthInfo.this, HomePage.class);
+                startActivity(intent);
+                finish();
             }
         });
 
