@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFD4C4"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewWorkoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editTextWorkoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter workout name"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_border"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textViewWorkoutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editTextWorkoutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter workout description"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_border"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textViewWorkoutDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Duration"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editTextWorkoutDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter workout duration"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_border"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textViewActivities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Select Exercises"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPushups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Push-ups"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxSquats"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Squats"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxLunges"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lunges"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxPlank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Plank"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxBurpees"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Burpees"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxJumpingJacks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Jumping Jacks"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxMountainClimbers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mountain Climbers"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxHighKnees"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="High Knees"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxBicycleCrunches"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bicycle Crunches"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxRussianTwists"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Russian Twists"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxBicepCurls"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bicep Curls"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxTricepDips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tricep Dips"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxShoulderPress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Shoulder Press"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxDeadlifts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Deadlifts"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxLegPress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Leg Press"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxCalfRaises"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Calf Raises"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxSidePlank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Side Plank"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxWallSit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Wall Sit"
+                android:textColor="#808080"
+                android:background="#FFFFFF"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textViewWorkoutIntensity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Intensity"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <RatingBar
+                android:id="@+id/ratingBarWorkoutIntensity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:numStars="5"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/rounded_border"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/buttonSaveWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFB2A8"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Save Workout"
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
