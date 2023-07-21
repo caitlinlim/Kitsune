@@ -41,22 +41,20 @@
         android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/addToCartButton"
+        android:id="@+id/buyNowButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/productPrice"
         android:layout_centerHorizontal="true"
-        android:text="Add to Cart"
+        android:text="Buy Now"
         android:textSize="18sp"/>
 
     <Button
-        android:id="@+id/buyNowButton"
+        android:id="@+id/homeButtonItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/addToCartButton"
-        android:layout_centerHorizontal="true"
-        android:text="Buy Now"
-        android:textSize="18sp"/>
+        android:layout_toLeftOf="@id/productImage"
+        android:text="home" />
 
     <!-- Other views and layout components can be added here -->
 

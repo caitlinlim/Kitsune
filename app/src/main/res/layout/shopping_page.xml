@@ -15,25 +15,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="23dp">
+        <Button
+            android:id="@+id/homeButtonShopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home" />
 
-            <!-- Cart Icon -->
-            <ImageView
-                android:id="@+id/cartIcon"
-                android:layout_width="34dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="350dp"
-                android:layout_marginTop="8dp"
-                android:adjustViewBounds="true"
-                android:clickable="true"
-                android:maxWidth="100dp"
-                android:maxHeight="100dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/carticon" />
-
-        </RelativeLayout>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -55,29 +42,29 @@
 
                     <!-- Item 1 -->
                     <ImageView
-                        android:id="@+id/item1Image"
+                        android:id="@+id/leggingsImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/leggings" />
 
                     <TextView
-                        android:id="@+id/item1Name"
+                        android:id="@+id/leggingsName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item1Image"
+                        android:layout_toRightOf="@id/leggingsImage"
                         android:text="Women's Leggings"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/item1Price"
+                        android:id="@+id/leggingsPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/item1Name"
+                        android:layout_below="@id/leggingsName"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item1Image"
+                        android:layout_toRightOf="@id/leggingsImage"
                         android:text="Price: $64.99"
                         android:textSize="16sp" />
 
@@ -93,29 +80,29 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:id="@+id/item2Image"
+                        android:id="@+id/mensTankImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/menstank" />
 
                     <TextView
-                        android:id="@+id/item2Name"
+                        android:id="@+id/mensTankName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item2Image"
+                        android:layout_toRightOf="@id/mensTankImage"
                         android:text="Men's Tank Top"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/item2Price"
+                        android:id="@+id/mensTankPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/item2Name"
+                        android:layout_below="@id/mensTankName"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item2Image"
+                        android:layout_toRightOf="@id/mensTankImage"
                         android:text="Price: $29.99"
                         android:textSize="16sp" />
 
@@ -130,29 +117,29 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:id="@+id/item3Image"
+                        android:id="@+id/sportsBraImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/sportsbra" />
 
                     <TextView
-                        android:id="@+id/item3Name"
+                        android:id="@+id/sportsBraName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item3Image"
+                        android:layout_toRightOf="@id/sportsBraImage"
                         android:text="Sports Bra"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/item3Price"
+                        android:id="@+id/sportsBraPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/item3Name"
+                        android:layout_below="@id/sportsBraName"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item3Image"
+                        android:layout_toRightOf="@id/sportsBraImage"
                         android:text="Price: $34.99"
                         android:textSize="16sp" />
 
@@ -167,29 +154,29 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:id="@+id/item4Image"
+                        android:id="@+id/shortsImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/mensshorts" />
 
                     <TextView
-                        android:id="@+id/item4Name"
+                        android:id="@+id/shortsName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item4Image"
+                        android:layout_toRightOf="@id/shortsImage"
                         android:text="Men's Shorts"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/item4Price"
+                        android:id="@+id/shortsPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/item4Name"
+                        android:layout_below="@id/shortsName"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item4Image"
+                        android:layout_toRightOf="@id/shortsImage"
                         android:text="Price: $38.99"
                         android:textSize="16sp" />
 
@@ -204,29 +191,29 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:id="@+id/item5Image"
+                        android:id="@+id/womensTankImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/womenstank" />
 
                     <TextView
-                        android:id="@+id/item5Name"
+                        android:id="@+id/womensTankName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item5Image"
+                        android:layout_toRightOf="@id/womensTankImage"
                         android:text="Women's Tank Top"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/item5Price"
+                        android:id="@+id/womensTankPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/item5Name"
+                        android:layout_below="@id/womensTankName"
                         android:layout_marginLeft="8dp"
-                        android:layout_toRightOf="@id/item5Image"
+                        android:layout_toRightOf="@id/womensTankImage"
                         android:text="Price: $29.99"
                         android:textSize="16sp" />
 

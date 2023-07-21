@@ -12,23 +12,9 @@ import com.example.kitsune.R;
 
 public class CheckoutActivity extends AppCompatActivity {
 
-//    private Button checkoutButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.checkout_page);
-
-//        checkoutButton = (Button) findViewById(R.id.checkoutButton);
-//        checkoutButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                openItemActivity();
-//            }
-//        });
     }
-//    public void openItemActivity() {
-//        Intent intent = new Intent(CartActivity.this, CheckoutActivity.class);
-//        startActivity(intent);
-//    }
 }
